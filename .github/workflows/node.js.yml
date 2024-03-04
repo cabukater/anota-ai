@@ -33,7 +33,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build --prod --outputPath=dist/anota-ai
+        run: npm run build -- --prod --output-path=dist/anota-ai --base-href=/anota-ai/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
