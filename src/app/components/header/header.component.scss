@@ -1,0 +1,45 @@
+.page-header {
+    background-color: #ffff; 
+    padding: 10px 20px; 
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);  
+    .logo {
+      margin-right: 10px; 
+      img{
+        max-width: 45px;
+      }
+    }
+  
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  
+      .site-name {
+        font-size: 24px; 
+        font-family: 'Roboto', sans-serif;
+
+        font-weight: 500;
+        color: #333;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block; 
+        max-width: 600px; 
+        @media (max-width: 600px) { 
+          font-size: 20px;
+        }
+      }
+      
+      .site-description {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px; 
+        color: #666;
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+  }
+  

@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap'); // Importa a fonte do Google Fonts, se for usar Roboto, por exemplo
+
+
+// Reset CSS
+body{
+    margin: 0 !important;
+    font-family: 'Roboto';
+    background-color: #f8f8f8;
+    width: 100%;
+}

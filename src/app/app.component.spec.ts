@@ -1,12 +1,21 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { SearchComponent } from './components/search/search.component';
+import { CardsComponent } from './components/cards/cards.component';
+import { ServicesModule } from './services/services.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        HeaderComponent,
+        SearchComponent,
+        CardsComponent
       ],
+      imports:[ServicesModule, FormsModule, ReactiveFormsModule],
     }).compileComponents();
   });
 
@@ -22,10 +31,5 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('anota-ai');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('anota-ai app is running!');
-  });
+
 });
