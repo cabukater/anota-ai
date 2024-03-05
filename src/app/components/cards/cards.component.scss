@@ -70,7 +70,7 @@
 
         &:hover {
             border: 1px solid red; // Considere criar uma variável para esta cor
-            transform: rotate(90deg);
+            transform: rotate(-90deg);
 
             .close-icon {
                 fill: #ff2626; // Considere criar uma variável para esta cor
@@ -116,4 +116,13 @@
     &.Flor {
         background-color: $tag-background-flor;
     }
+}
+
+
+svg{
+    width: 18px;
+    line-height: 21px;
+    position: relative;
+    top: 1px;
+    left: 0px 
 }
